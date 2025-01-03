@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+css样式控制(层叠样式表)
+样式，无关内容，对于内容进行展示的改变
+如颜色、字体、大小...
+bgcolor 样式
+align 样式
+问题
+1.样式设置是直接设置在标签上的，如果标签很多，且标签的样式有重复的，造成很多的重复代码
+2.样式设置和内容耦合在一起，以后维护代码不方便
+
+将文档结构和样式控制拆分
+1.消除冗余，同样的样式控制就写一遍
+2.结构清晰，在查看文档结构的时候不会关注其他东西，方便后期的定位和修改
+
+样式控制
+选择器{          对页面结构那些标签进行选中
+  属性:值;       为该标签设置哪些属性信息
+  属性:值;       属性信息可以将指定的样式作用在该标签上
+ }
+ 多个选择器并存
+ 选择器{} 选择器{}
+-->
+<body>
+<table border="1px" cellspacing="0" cellpadding="10px" align="center">
+  <caption>用户信息表</caption>
+  <tr bgcolor="yellow">
+    <th>姓名</th>
+    <th>年龄</th>
+    <th>地址</th>
+    <th>职业</th>
+  </tr>
+  <tr bgcolor="aqua" align="center">
+    <td>赵六</td>
+    <td>23</td>
+    <td>连云港</td>
+    <td>公务员</td>
+  </tr>
+  <tr bgcolor="#adff2f" align="center">
+    <td>王五</td>
+    <td>22</td>
+    <td>扬州</td>
+    <td>程序员</td>
+  </tr>
+  <tr bgcolor="aqua" align="center">
+    <td>张三</td>
+    <td>21</td>
+    <td>南京</td>
+    <td>实习生</td>
+  </tr>
+  <tr bgcolor="#adff2f" align="center">
+    <td>李四</td>
+    <td>20</td>
+    <td>常州</td>
+    <td>研究生</td>
+  </tr>
+</table>
+</body>
+</html>
